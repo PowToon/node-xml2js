@@ -64,6 +64,7 @@
   },
   "scripts": {
     "test": "zap",
+    "build": "coffee -o ./lib -c ./src",
     "coverage": "nyc npm test && nyc report",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
@@ -72,7 +73,7 @@
     "url": "https://github.com/Leonidas-from-XIV/node-xml2js.git"
   },
   "dependencies": {
-    "sax": ">=0.6.0",
+    "sax": "git+https://github.com/PowToon/sax-js.git#loose-casing",
     "xmlbuilder": "^8.2.0"
   },
   "devDependencies": {

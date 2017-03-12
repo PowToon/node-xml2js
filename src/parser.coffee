@@ -70,6 +70,7 @@ class exports.Parser extends events.EventEmitter
     @saxParser = sax.parser @options.strict, {
       trim: false,
       normalize: false,
+      looseCasing: null,
       xmlns: @options.xmlns
     }
 
